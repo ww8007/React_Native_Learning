@@ -69,3 +69,26 @@ react와 동일하게 초기 파일들을 설정해 줄 수 있다.
 
 - 오류를 해결
   오류가 났을 때는 서버를 중지 시키고 다시 빌드를 해주면 된다.
+
+> rn과 html의 차이점
+
+    모든 것이 js와 동일하게 생각하면 안된다.
+    color, fontSize
+
+### style 추가 방법
+
+> styles.text 로 만들어서 color를 지정시켜 주면 된다.
+
+```javascript
+<View style={styles.container}>
+  <Text style={styles.text}>See you later</Text>
+  <StatusBar style="auto" />
+</View>
+```
+
+### 리엑트 네이티브
+
+> flex 속성
+
+    colum이 기본 속성이다.
+    flexDirection 기본으로 통해서 바꿀 수 있다.
