@@ -90,5 +90,26 @@ react와 동일하게 초기 파일들을 설정해 줄 수 있다.
 
 > flex 속성
 
+    flexDirection : column
     colum이 기본 속성이다.
     flexDirection 기본으로 통해서 바꿀 수 있다.
+
+- website : flexDirection : row
+
+> style.container
+
+    모든 공간을 포함하는 것을 의미한다.
+    flex: 1을 기본적으로 가지면서
+    이 안에 내용을 변경하게 되면 모든 내용이 변경된다.
+
+- RN에서의 flex
+  - flex 값들의 합이 container flex 기준의 값에서 a/a+b의 값을 가지게 된다.
+  - yellowView: 1
+  - blueView:3
+  - blue : 3/4
+
+> flex를 이용해서 코드를 작성하는 것이 좋음
+
+    이유는 아이패드로 열거나 핸드폰으로 열거나
+    코드를 작성하는 것이 좀 더 효율적으로 생성될 수 있다.
+    반응형으로 작성하는 것이 flex로 작성하는게 더욱 효과적이기 때문!!!
