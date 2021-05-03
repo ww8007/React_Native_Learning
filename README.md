@@ -158,3 +158,9 @@ export default Loading;
     기본적으로 숫자만 써도 rn이 자동으로 변환을 시켜줌
     만약 px을 명시하고 싶다면
     fontSize : "20px" 이렇게 적어주면 된다.
+
+### API 사용
+
+expo install expo-location
+
+import \* as Location
