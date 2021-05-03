@@ -113,3 +113,48 @@ react와 동일하게 초기 파일들을 설정해 줄 수 있다.
     이유는 아이패드로 열거나 핸드폰으로 열거나
     코드를 작성하는 것이 좀 더 효율적으로 생성될 수 있다.
     반응형으로 작성하는 것이 flex로 작성하는게 더욱 효과적이기 때문!!!
+
+### Loading Screen
+
+1. Loading 컴포넌트 작성
+1. View와 Text를 이용해서 style=styles.container 생성 후 내용 기입
+
+```js
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+
+function Loading() {
+  return (
+    <View style={styles.container}>
+      <Text>Getting the fucking weather</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "flex-end",
+    paddingHorizontal: 30,
+    paddingVertical: 100,
+  },
+});
+
+export default Loading;
+```
+
+1. import 해서 내용 사용
+
+> RN 에서의 padding
+
+    1. paddingHorizontal
+        왼쪽 여백으로 생각하면 됨
+    1. paddingVertical
+        수직 여백을 생각하면 됨
+    일반적인 react에는 존재하지 않는 특성이다.
+
+> RN 에서의 px값
+
+    기본적으로 숫자만 써도 rn이 자동으로 변환을 시켜줌
+    만약 px을 명시하고 싶다면
+    fontSize : "20px" 이렇게 적어주면 된다.
