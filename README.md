@@ -164,3 +164,11 @@ export default Loading;
 expo install expo-location
 
 import \* as Location
+
+- Location.getCurrentPositionAsync()
+  - 현재 위치 받아오는 api
+- class 형으로 해서 componentDidMount()로 불러온다.
+
+> getLocation 문제점
+
+    많은 정보를 가지고 있지 않다.
