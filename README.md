@@ -172,3 +172,17 @@ import \* as Location
 > getLocation 문제점
 
     많은 정보를 가지고 있지 않다.
+
+### 날씨 불러오기
+
+openweathermap.org
+
+- api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+- axios 이용
+
+const {data} = axios.get("주소")
+
+> 주의점
+
+    axios에는 http나 https 주소가 들어가야 한다.
+    이를 어길 시 오류가 나므로 이 점 유의!!!
