@@ -202,3 +202,16 @@ data.main.temp에 우리가 원하는 데이터가 들어있음
 ```javascript
 Math.round(temp);
 ```
+
+### es6 문법
+
+비구조화 할당 하기
+
+```javascript
+const {data: main:{temp}, weather}
+```
+
+1. data.main.temp -> {data: main:{temp}} -> temp
+1. 배열로 된 것은
+   - 배열 명 불러와서
+   - weather[0].main
