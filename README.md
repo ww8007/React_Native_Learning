@@ -186,3 +186,19 @@ const {data} = axios.get("주소")
 
     axios에는 http나 https 주소가 들어가야 한다.
     이를 어길 시 오류가 나므로 이 점 유의!!!
+
+- 섭씨 온도 가져오기
+  - other features 부분에 
+    &units=metric 로 나와 있는 부분 쿼리 문에 추가 시키면 된다.
+
+### 아이콘 설정하기
+
+yarn add prop-types
+
+### 반올림 하여서 state 넘기기
+
+data.main.temp에 우리가 원하는 데이터가 들어있음
+
+```javascript
+Math.round(temp);
+```
