@@ -215,3 +215,21 @@ const {data: main:{temp}, weather}
 1. 배열로 된 것은
    - 배열 명 불러와서
    - weather[0].main
+
+### Lenear greadiant
+
+expo install expo-linear-gradient
+
+### 상태바 수정하기
+
+- component 안에다 내용을 입력하고 수정하면 된다
+- statuts 바의 css는 전체 css 내용에 영향을 미치지 않는다.
+
+> <Statusbar barStle="light content">
+
+- ui gradient
+- 앞의 것이 위쪽에 오면서 스펙트럼을 가지면서 내려온다고 보면 된다.
+
+### es6 오브젝트 두개 동시에 사용하기
+
+style에 spread 연산자를 이용해서 ...styles.abc, ...styles.obj 이렇게 사용하면 된다.
